@@ -1,0 +1,10 @@
+import java.util.List;
+import java.util.Optional;
+
+public interface IAcervoRepository {
+    List<Livro> getAll();
+    Optional<Livro> getById(long codigo);
+    boolean cadastraLivroNovo(Livro livro);
+    boolean atualizaLivro(Livro livro);
+    boolean removeLivro(long codigo);
+}
